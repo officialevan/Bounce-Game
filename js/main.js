@@ -165,7 +165,7 @@ window.requestAnimFrame = (function () {
     console.log(points);
     if (points % 8 == 0) {
       level++;
-    document.writeln("You are now Level" + level);
+    document.getElementById('level').innerHTML="You are now Level" + level;
       console.log("level is" + level);
   
       if (Math.abs(ball.vx) < 15) {
